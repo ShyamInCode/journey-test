@@ -1,0 +1,37 @@
+{
+    "workflowApiVersion": "1.1",
+    "metaData": {
+        "icon": "images/icon.png",
+        "category": "message"
+    },
+    "type": "REST",
+    "lang": {
+        "en-US": {
+            "name": "Custom Activity",
+            "description": "A custom activity for SFMC"
+        }
+    },
+    "arguments": {
+        "execute": {
+            "inArguments": [],
+            "url": "https://yourbackenddomain.com/execute",
+            "verb": "POST",
+            "body": "",
+            "header": "",
+            "format": "json",
+            "useJwt": true,
+            "timeout": 10000
+        }
+    },
+    "configurationArguments": {
+        "publish": {
+            "url": "https://yourbackenddomain.com/publish"
+        },
+        "validate": {
+            "url": "https://yourbackenddomain.com/validate"
+        },
+        "stop": {
+            "url": "https://yourbackenddomain.com/stop"
+        }
+    }
+}
